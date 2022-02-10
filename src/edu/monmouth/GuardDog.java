@@ -15,4 +15,14 @@ public class GuardDog extends Dog{
     public static void main(String []args){
 
     }
+
+    @Override
+    public void move() {
+        super.move();
+    }
+
+    @Override
+    public void makeSound() {
+        super.makeSound();
+    }
 }

@@ -15,4 +15,14 @@ public class Dog implements Animal {
     public static void main(String[] args) {
 
     }
+
+    @Override
+    public void move() {
+        Animal.super.move();
+    }
+
+    @Override
+    public void makeSound() {
+        Animal.super.makeSound();
+    }
 }

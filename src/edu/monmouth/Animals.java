@@ -13,13 +13,13 @@ public class Animals {
         Animal fish = new Fish("Orange");
         Animals[1] = fish;
 
-        Animal guardDog = new GuardDog("Brown", 5);
+        Animal guardDog = new GuardDog("Brown", (short) 5);
         Animals[2] = guardDog;
 
         Animal showDog = new ShowDog("White", "Retriever");
         Animals[3] = showDog;
 
-        Animal shark = new Shark("Bite");
+        Animal shark = new Shark("Blue", "Bite");
         Animals[4] = shark;
 
         Animal wolf = new Dog("Black");

@@ -28,7 +28,8 @@ public class GuardDog extends Dog{
     @Override
     public String toString() {
         return "GuardDog{" +
-                "meanness=" + meanness +
+                "furColor='" + furColor + '\'' +
+                ", meanness=" + meanness +
                 '}';
     }
 }

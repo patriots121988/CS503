@@ -20,6 +20,8 @@ public class Wolf extends Dog{
 
     @Override
     public String toString() {
-        return "Wolf{}";
+        return "Wolf{" +
+                "furColor='" + furColor + '\'' +
+                '}';
     }
 }

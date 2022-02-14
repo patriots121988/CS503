@@ -9,21 +9,33 @@ public class Animals {
 
         Animal dog = new Dog("Gray");
         Animals[0] = dog;
+        dog.move();
+        dog.makeSound();
 
         Animal fish = new Fish("Orange");
         Animals[1] = fish;
+        fish.move();
+        fish.makeSound();
 
         Animal guardDog = new GuardDog("Brown", (short) 5);
         Animals[2] = guardDog;
+        guardDog.move();
+        guardDog.makeSound();
 
         Animal showDog = new ShowDog("White", "Retriever");
         Animals[3] = showDog;
+        showDog.move();
+        showDog.makeSound();
 
         Animal shark = new Shark("Blue", "Bite");
         Animals[4] = shark;
+        shark.move();
+        shark.makeSound();
 
         Animal wolf = new Dog("Black");
         Animals[5] = wolf;
+        wolf.move();
+        wolf.makeSound();
 
         StringBuilder s = new StringBuilder();
 

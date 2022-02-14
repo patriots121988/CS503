@@ -2,15 +2,12 @@ package edu.monmouth;
 
 public class GuardDog extends Dog{
 
-    public short getMeanness() {
-        return meanness;
-    }
+    private final short meanness;
 
-    public void setMeanness(short meanness) {
+    public GuardDog(String furColor, short meanness) {
+        super(furColor);
         this.meanness = meanness;
     }
-
-    private short meanness;
 
     public static void main(String []args){
 
@@ -19,10 +16,19 @@ public class GuardDog extends Dog{
     @Override
     public void move() {
         super.move();
+        System.out.println("Protect");
     }
 
     @Override
     public void makeSound() {
         super.makeSound();
+        System.out.println("Bark");
+    }
+
+    @Override
+    public String toString() {
+        return "GuardDog{" +
+                "meanness=" + meanness +
+                '}';
     }
 }

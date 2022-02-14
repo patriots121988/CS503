@@ -2,15 +2,11 @@ package edu.monmouth;
 
 public class Fish implements Animal{
 
-    public String getColor() {
-        return color;
-    }
+    protected String color;
 
-    public void setColor(String color) {
+    public Fish(String color) {
         this.color = color;
     }
-
-    private String color;
 
     public static void main(String []args){
 
@@ -19,10 +15,19 @@ public class Fish implements Animal{
     @Override
     public void move() {
         Animal.super.move();
+        System.out.println("Swim");
     }
 
     @Override
     public void makeSound() {
         Animal.super.makeSound();
+        System.out.println("Glub");
+    }
+
+    @Override
+    public String toString() {
+        return "Fish{" +
+                "color='" + color + '\'' +
+                '}';
     }
 }
